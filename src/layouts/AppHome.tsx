@@ -6,6 +6,7 @@ import RxjsLogo from '../assets/rxjs.svg';
 import TypescriptLogo from '../assets/typescript.svg';
 import ViteLogo from '../assets/vitejs.svg';
 import SassLogo from '../assets/sass.svg';
+import CypressLogo from '../assets/cypress.svg';
 
 const AppHome = () => {
   const [imageCounter, setImageCounter] = useState(0);
@@ -53,6 +54,12 @@ const AppHome = () => {
       label: 'Sass',
       docUrl: 'https://sass-lang.com/',
     },
+    {
+      alt: 'cypress',
+      logo: CypressLogo,
+      label: 'Cypress',
+      docUrl: 'https://cypress.io',
+    },
   ];
 
   useEffect(() => {
@@ -86,9 +93,7 @@ const AppHome = () => {
             />
           );
         })}
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
+        <p>This app is meant to be a turnkey solution for SPA development.</p>
         <div className='links'>
           {technologies.map((technology) => {
             return (
